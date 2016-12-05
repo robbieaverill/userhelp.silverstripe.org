@@ -73,6 +73,7 @@ public function getSchedule()
 {
     return '0 8 * * *'; // runs process() function every day at 8AM
 }
+```
 
 ## Deployment
 
