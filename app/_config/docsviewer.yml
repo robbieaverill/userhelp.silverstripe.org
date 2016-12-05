@@ -12,32 +12,37 @@ DocumentationManifest:
     -
       Path: "assets/src/userhelp_3.5/docs/"
       Title: "User Help"
-      Version: "3.5"
+      VersionTitle: "3.x"
+      Version: "3"
       Stable: true
       DefaultEntity: true
     -
       Path: "assets/src/userhelp_3.4/docs/"
       Title: "User Help"
+      VersionTitle: "3.4"
       Version: "3.4"
-      DefaultEntity: true
+      Archived: true
     -
       Path: "assets/src/userhelp_3.3/docs/"
       Title: "User Help"
+      VersionTitle: "3.3"
       Version: "3.3"
-      DefaultEntity: true
+      Archived: true
     -
       Path: "assets/src/userhelp_3.2/docs/"
       Title: "User Help"
+      VersionTitle: "3.2"
       Version: "3.2"
-      DefaultEntity: true
+      Archived: true
     -
       Path: "assets/src/userhelp_3.1/docs/"
       Title: "User Help"
+      VersionTitle: "3.1"
       Version: "3.1"
-      DefaultEntity: true
+      Archived: true
     -
       Path: "assets/src/userhelp_3.0/docs/"
+      VersionTitle: "3.0"
       Title: "User Help"
       Version: "3.0"
-      DefaultEntity: true
-      
+      Archived: true

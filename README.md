@@ -44,12 +44,13 @@ DocumentationManifest:
     -
       Path: "assets/src/userhelp_3.2/docs/"
       Title: "User Help"
+      VersionTitle: "3.x"
       Version: "3.2"
       Stable: true
       DefaultEntity: true
 ```
 
-Set `Stable: true` on the set of documentation relating the current stable version of SilverStripe CMS.
+Set `Stable: true` on the set of documentation relating the current stable major version of SilverStripe CMS. Set `Archived: true` for all other versions than the current major version.
 
 
 ## Contribution
@@ -59,7 +60,7 @@ theme, submit a pull request on GitHub. Any approved pull requests will make
 their way onto the userhelp.silverstripe.org site in the next release.
 
 The content for userhelp.silverstripe.org is stored in a separate repository:
-[https://github.com/silverstripe/silverstripe-userhelp-content](https://github.com/silverstripe/silverstripe-userhelp-content). 
+[silverstripe/silverstripe-userhelp-content](https://github.com/silverstripe/silverstripe-userhelp-content). 
 If you wish to edit the documentation content, submit a pull request to that Github project. Updates 
 to the content are synced regularly with userhelp.silverstripe.org via the cron job `UpdateDocsCronTask`.
 
@@ -67,9 +68,11 @@ to the content are synced regularly with userhelp.silverstripe.org via the cron 
 
 The cron job `UpdateDocsCronTask` includes tasks that fetch the latest documentation for each module from git and rebuilds the search indexes.
 
-	public function getSchedule() {
-    return "0 8 * * *"; // runs process() function every day at 8AM
-  }
+```php
+public function getSchedule()
+{
+    return '0 8 * * *'; // runs process() function every day at 8AM
+}
 
 ## Deployment
 
